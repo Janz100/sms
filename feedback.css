@@ -1,0 +1,60 @@
+/* Basic styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding-top:5%;
+  background: url('feed_back.jpeg') no-repeat center center fixed; /* Replace 'your-image.jpg' with your image path */
+  background-size: cover; /* Ensures the image covers the entire screen */
+  background-attachment: fixed; /* Keeps the background fixed while scrolling */
+}
+/* Feedback container styles */
+.feedback-container {
+  background-color: rgba(255, 255, 255, 0.8); /* Slight transparency so the background shows through */
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  margin-top: 80px; /* Adjust to prevent it being covered by the fixed header */
+}
+
+h2 {
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  background-color: #501b1be1;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #003f8a;
+}
+
+.success-message {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}

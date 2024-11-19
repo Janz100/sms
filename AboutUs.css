@@ -1,0 +1,140 @@
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-image: url('abt_back.jpeg'); /* Add your image URL or path here */
+    background-size: cover; /* Ensure the image covers the entire page */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Keep the background fixed during scrolling */
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 10%;
+    background-color: rgba(255, 255, 255, 0.9); /* White background with transparency */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* About Us Section */
+.about-us {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card h2 {
+    font-size: 1.8rem;
+    color: #0078D7;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.card p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #666;
+    font-size: 1.1rem;
+}
+
+/* Footer styling */
+.footer-container {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container .footer-section {
+    margin-bottom: 20px;
+}
+
+.footer-container .footer-section h4 {
+    color: #ffeb3b;
+    margin-bottom: 10px;
+}
+
+.footer-container a {
+    color: #ffeb3b;
+    text-decoration: none;
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
+
+    .card h2 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    .card {
+        padding: 1rem;
+    }
+
+    .card h2 {
+        font-size: 1.4rem;
+    }
+}

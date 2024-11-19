@@ -1,0 +1,171 @@
+/* Basic styles */
+body, html {
+    margin: 0;
+    padding-top: 3%;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+/* Background image section */
+.hero-section {
+    position: relative;
+    background-image: url('homepage1.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    height: 600px; /* Increased height for a larger image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-text {
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    padding: 30px; /* Increased padding */
+    border-radius: 10px;
+    font-size: 2.5em; /* Increased font size */
+    font-weight: bold;
+}
+
+/* Media section styling */
+.media-section {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.media-section h2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.media-section p {
+    margin-top: 20px;
+    color: #666;
+}
+
+.media-section .media-activities {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.media-section .media-activity {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+}
+
+.media-section .media-activity img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.media-section .media-activity h3 {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.media-section .media-activity p {
+    margin-top: 10px;
+    color: #666;
+}
+
+/* Gallery container styling */
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    overflow-x: auto;
+}
+
+.gallery-item {
+    flex: 0 0 auto;
+    width: 300px;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 200px; /* Set a fixed height for all images */
+    object-fit: cover; /* Ensure the image covers the entire area */
+    display: block;
+    border-radius: 5px;
+}
+
+/* Footer styling */
+.footer-container {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container .footer-section {
+    margin-bottom: 20px;
+}
+
+.footer-container .footer-section h4 {
+    color: #ffeb3b;
+    margin-bottom: 10px;
+}
+
+.footer-container a {
+    color: #ffeb3b;
+    text-decoration: none;
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.grid-item {
+    padding: 10px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .media-section .media-activities {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-item {
+        width: 100%;
+    }
+
+    .hero-text {
+        font-size: 1.8em; /* Adjusted font size for smaller screens */
+        padding: 20px; /* Adjusted padding */
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .header-container h3 {
+        font-size: 1.2em;
+    }
+}
+
+

@@ -1,0 +1,58 @@
+/* Basic styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding-top:3%;
+  background: url('location_back.webp') no-repeat center center fixed; /* Replace with your image path */
+  background-size: cover; /* Ensure the background covers the entire page */
+  background-attachment: fixed; /* Keeps the background fixed while scrolling */
+  color: #333;
+}
+/* Content styling */
+h1, h2 {
+  text-align: center;
+  color: #004080;
+}
+
+#location {
+  max-width: 800px;
+  margin: 80px auto 20px; /* Added top margin to avoid overlap with fixed header */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.location-images {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.location-images img {
+  border-radius: 8px;
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.location-images img:hover {
+  transform: scale(1.05);
+}
+
+.map-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.map-container iframe {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

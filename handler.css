@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f4ec;
+    margin: 0;
+    padding-top: 10%;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #3e3e3e;
+}
+
+.underline {
+    width: 80px;
+    height: 2px;
+    background-color: #3e3e3e;
+    margin: 10px auto;
+    position: relative;
+}
+
+.underline::after {
+    content: "";
+    width: 40px;
+    height: 2px;
+    background-color: #3e3e3e;
+    position: absolute;
+    left: 20px;
+    top: 5px;
+}
+
+.handlers .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.handlers .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.handlers .card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.handlers .card:hover img {
+    transform: scale(1.1);
+}
+
+.card-body {
+    background-color: #3e3e3e;
+    color: #fff;
+    text-align: center;
+}
+
+.card-body p {
+    margin: 0;
+    font-size: 1.2em;
+    text-transform: capitalize;
+}
+
+/* Styling for the info section */
+.info {
+    background-color: #292727;
+    border: 1px solid #292727;
+    padding: 10px;
+    display: none; /* Initially hidden */
+    margin-top: 10px;
+    text-align: left;
+    font-size: 1em;
+}
+
+/* Styling for the buttons */
+.btn-info {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+.btn-info:hover {
+    background-color: #007bff;
+}

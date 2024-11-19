@@ -1,0 +1,74 @@
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 10%;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a4a1a1;
+    color: #333;
+    line-height: 1.6;
+}
+
+.executives-container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+}
+
+.team-member {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 250px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+}
+
+.member-info {
+    padding: 10px;
+}
+
+.member-info h3 {
+    margin: 10px 0 5px 0;
+    font-size: 1.2em;
+    color: #6a1b9a;
+}
+
+.member-info p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #333;
+}
+
+/* Make the grid responsive */
+@media screen and (max-width: 768px) {
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .team-grid {
+        grid-template-columns: 1fr; /* 1 column on very small screens */
+    }
+}
